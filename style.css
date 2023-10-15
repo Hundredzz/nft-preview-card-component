@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Cyan-50: hsla(178, 100%, 50%, 50%);
+    --Very-dark-blue-mbg: hsl(217, 54%, 11%);
+    --Very-dark-blue-cbg: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    cursor: default;
+    background-color: var(--Very-dark-blue-mbg);
+}
+
+p{
+    color: var(--Soft-blue);
+    font-weight: 300;
+}
+
+.main{
+    display: flex;
+    background-color: var(--Very-dark-blue-mbg);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container{
+    width: 300px;
+    margin: 0 auto;
+}
+
+.NFT-container{
+    background-color: var(--Very-dark-blue-cbg);
+    display: block;
+    width: 300px;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    max-height: 100vh;
+}
+
+.item-image{
+    width: 300px;
+    border-radius: 0.5rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.cover{
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 0.5rem;
+    background-color: var(--Cyan-50);
+    transition: ease 0.5s;
+    opacity: 0;
+}
+
+.cover:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+h3{
+    color: var(--White);
+    font-size: 22px;
+    transition: ease 0.3s;
+}
+
+h3:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.description-container{
+    margin-top: 1rem;
+}
+
+.top-description :nth-child(2){
+    margin-top: 1rem;
+}
+
+.description{
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    position: relative;
+    margin-top: 1.8rem;
+}
+
+.Eth-value{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: var(--Cyan);
+}
+
+.Eth-value :first-child{
+    margin-right: 6px;
+}
+
+.timeleft{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    right: 0;
+    font-weight: 400;
+}
+
+.timeleft :first-child{
+    margin-right: 6px;
+}
+
+hr.line{
+    border: 1px solid var(--Very-dark-blue-line);
+    margin-top: 1.7rem;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.avatar-image{
+    width: 30px;
+    border: 1px solid var(--White);
+    border-radius: 100%;
+    margin-right: 18px;
+}
+
+span{
+    color: var(--White);
+    font-weight: 400;
+    transition: ease 0.3s;
+}
+
+span:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}

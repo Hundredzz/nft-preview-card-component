@@ -1,0 +1,5 @@
+@media screen and (max-width: 375px) {
+    hr.line{
+        margin-top: 1rem;
+    }
+}
